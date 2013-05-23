@@ -12,7 +12,7 @@ package SOAP::Transport::TCP;
 
 use strict;
 
-our $VERSION = 0.716;
+our $VERSION = 0.717;
 
 use URI;
 use IO::Socket;
@@ -212,7 +212,7 @@ sub handle {
   my %data;
   while (1) {
     my @ready = $session_set->wait($sock->timeout);
-    for my $session (@ready) {
+    for my $session (grep { defined } @ready) {
       my $data;
       if (my $rc = $session->read($data, 4096)) {
         $data{$session} .= $data if $rc > 0;

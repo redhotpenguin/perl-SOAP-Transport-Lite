@@ -1,3 +1,6 @@
+0.717  Wed May 21, 2013
+    - RT 60453 SOAP::Transport::TCP in use with IO::Socket::SSL exits
+
 0.716
     - add IO::SessionData module
 

@@ -1,0 +1,7 @@
+0.716
+    - add IO::SessionData module
+
+0.715
+
+0.714 - 
+* Initial version - split from SOAP::Lite

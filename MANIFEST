@@ -1,0 +1,10 @@
+Changes
+lib/SOAP/Transport/TCP.pm
+MANIFEST
+README
+t/096_characters.t
+t/097_kwalitee.t
+t/098_pod.t
+t/099_pod_coverage.t
+t/TCP.t
+Makefile.PL
